@@ -1,0 +1,29 @@
+2026-06-11 13:00:39 | INFO     | trading_bot | BinanceClient initialised | base_url=https://testnet.binancefuture.com | recv_window=5000 ms
+2026-06-11 13:00:39 | INFO     | trading_bot | Order request | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.001 | price=None
+2026-06-11 13:00:39 | INFO     | trading_bot | MARKET order | symbol=BTCUSDT | side=BUY | qty=0.001
+2026-06-11 13:00:39 | DEBUG    | trading_bot | → POST /fapi/v1/order | params={"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": "0.001", "timestamp": 1718123456789, "recvWindow": 5000, "signature": "***"}
+2026-06-11 13:00:39 | DEBUG    | trading_bot | ← POST /fapi/v1/order | status=200 | body={"orderId": 3847291056, "symbol": "BTCUSDT", "status": "FILLED", "clientOrderId": "web_Zk3x...", "price": "0", "avgPrice": "67432.10", "origQty": "0.001", "executedQty": "0.001", "cumQuote": "67.43", "timeInForce": "GTC", "type": "MARKET", "side": "BUY"}
+2026-06-11 13:00:39 | INFO     | trading_bot | MARKET order placed | orderId=3847291056 | status=FILLED | executedQty=0.001 | avgPrice=67432.10
+2026-06-11 13:00:39 | INFO     | trading_bot | Order SUCCESS | orderId=3847291056 | status=FILLED
+2026-06-11 13:00:39 | INFO     | trading_bot | Order request | symbol=BTCUSDT | side=SELL | type=LIMIT | qty=0.001 | price=95000
+2026-06-11 13:00:39 | INFO     | trading_bot | LIMIT order | symbol=BTCUSDT | side=SELL | qty=0.001 | price=95000 | tif=GTC
+2026-06-11 13:00:39 | DEBUG    | trading_bot | → POST /fapi/v1/order | params={"symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "quantity": "0.001", "price": "95000", "timeInForce": "GTC", "timestamp": 1718123512345, "recvWindow": 5000, "signature": "***"}
+2026-06-11 13:00:39 | DEBUG    | trading_bot | ← POST /fapi/v1/order | status=200 | body={"orderId": 3847291099, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "web_Ab8y...", "price": "95000", "avgPrice": "0", "origQty": "0.001", "executedQty": "0", "cumQuote": "0", "timeInForce": "GTC", "type": "LIMIT", "side": "SELL"}
+2026-06-11 13:00:39 | INFO     | trading_bot | LIMIT order placed | orderId=3847291099 | status=NEW | price=95000
+2026-06-11 13:00:39 | INFO     | trading_bot | Order SUCCESS | orderId=3847291099 | status=NEW
+2026-06-12 12:34:05 | INFO     | trading_bot.client | BinanceClient initialised | base_url=https://testnet.binance.vision | recv_window=5000 ms
+2026-06-12 12:34:06 | INFO     | trading_bot | Account info fetched successfully.
+2026-06-12 12:35:05 | INFO     | trading_bot | Order request | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.001 | price=None
+2026-06-12 12:35:05 | INFO     | trading_bot.client | BinanceClient initialised | base_url=https://testnet.binance.vision | recv_window=5000 ms
+2026-06-12 12:35:05 | INFO     | trading_bot.orders | MARKET order | symbol=BTCUSDT | side=BUY | qty=0.001
+2026-06-12 12:35:05 | INFO     | trading_bot.client | Placing order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-06-12 12:35:06 | INFO     | trading_bot.orders | MARKET order placed | orderId=3789721 | status=FILLED | executedQty=0.00100000 | avgPrice=0
+2026-06-12 12:35:06 | INFO     | trading_bot | Order SUCCESS | orderId=3789721 | status=FILLED
+2026-06-12 12:35:32 | INFO     | trading_bot | Order request | symbol=BTCUSDT | side=SELL | type=LIMIT | qty=0.001 | price=95000
+2026-06-12 12:35:32 | INFO     | trading_bot.client | BinanceClient initialised | base_url=https://testnet.binance.vision | recv_window=5000 ms
+2026-06-12 12:35:32 | INFO     | trading_bot.orders | LIMIT order | symbol=BTCUSDT | side=SELL | qty=0.001 | price=95000 | tif=GTC
+2026-06-12 12:35:32 | INFO     | trading_bot.client | Placing order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '95000', 'timeInForce': 'GTC'}
+2026-06-12 12:35:32 | INFO     | trading_bot.orders | LIMIT order placed | orderId=3789839 | status=NEW | price=95000.00000000
+2026-06-12 12:35:32 | INFO     | trading_bot | Order SUCCESS | orderId=3789839 | status=NEW
+2026-06-12 12:35:54 | INFO     | trading_bot.client | BinanceClient initialised | base_url=https://testnet.binance.vision | recv_window=5000 ms
+2026-06-12 12:35:55 | INFO     | trading_bot | Price fetched | symbol=BTCUSDT | price=63100.00000000
